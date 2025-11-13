@@ -1,7 +1,8 @@
 import random
 
-choices = ["rock", "paper", "scissors"]
-computer_choice = random.choice(choices)
+def computer_choice():
+    options = ["rock", "paper", "scissors"]
+    return random.choice(options)
 
-print("Welcome to Rock-Paper-Scissors!")
-print(f"Computer chose: {computer_choice}")
+if __name__ == "__main__":
+    print("Computer chooses:", computer_choice())
